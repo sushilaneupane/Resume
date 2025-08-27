@@ -16,7 +16,7 @@ a,
 h4,
 ul,
 li {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .container {
@@ -33,29 +33,36 @@ li {
   background: rgb(33, 33, 78);
   color: #fff;
   text-align: center;
-  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* center vertically */
+  align-items: center;
+  /* center horizontally */
   min-height: 25vh;
   margin-bottom: 0;
-
 }
 
+
 .header-container h1 {
-  font-size: 2.8rem;
-  letter-spacing: 7px;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
   margin-bottom: 5px;
 }
 
 .header-container h2 {
-  font-size: 1.8rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 5px;
   font-weight: 400;
-  color: #ddd;
-  margin: 0;
 }
+
 
 .main-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  min-height: 60vh;
+  min-height: 55vh;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -64,6 +71,7 @@ li {
 .gitlink {
   margin-left: 50px;
   color: black;
+  text-decoration: underline;
 }
 
 a {
@@ -87,7 +95,7 @@ a {
 }
 
 .section h2 {
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin-bottom: 15px;
   color: #000;
   padding-bottom: 8px;
@@ -95,7 +103,7 @@ a {
 }
 
 .contact-info p {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
@@ -176,6 +184,8 @@ ul li::before {
   margin-top: 0;
 }
 
+
+
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -189,8 +199,8 @@ ul li::before {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: black;
   border: 3px solid #333;
@@ -210,24 +220,13 @@ ul li::before {
   border-radius: 50%;
   border: 2px solid black;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 60px 0;
-  /* increased from 40px to 80px */
+  margin: 30px 0;
   text-align: center;
   width: 10px;
   height: 10px;
   font-size: 12px;
 }
 
-
-/* 
-.break-line {
-  height: 30px;
-  width: 3px;
-  background: #333;
-  margin: 10px 0;
-} */
-
-/* Profile */
 .profile {
   text-align: justify;
   padding: 5px 0;
@@ -242,7 +241,7 @@ ul li::before {
 
 /* Projects */
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #eee;
 }
@@ -252,14 +251,14 @@ ul li::before {
 }
 
 .project h4 {
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   margin-bottom: 8px;
   color: #000;
 }
 
 .project h2 {
   letter-spacing: 0.1rem;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .project a {
@@ -286,7 +285,7 @@ ul li::before {
   content: none;
 }
 
-/* Responsive: Tablets & Medium Screens */
+
 @media (max-width: 992px) {
   .main-content {
     grid-template-columns: 1fr;
@@ -340,6 +339,7 @@ p {}
     margin-bottom: 5px;
   }
 
+
   .header-container h2 {
     font-size: 1.2rem;
   }
@@ -347,16 +347,23 @@ p {}
   .left-column,
   .right-column {
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  .profile {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .section h2 {
     font-size: 18px;
   }
 
+
   .project h4 {
     font-size: 1rem;
   }
+
 
   .timeline {
     width: 100%;
